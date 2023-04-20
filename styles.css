@@ -1,0 +1,368 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blue;
+    background-image: url(https://krot.info/uploads/posts/2021-01/1611842844_4-p-zadnii-fon-dlya-logo-6.png);
+}
+
+
+
+.video-background{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.Main-Wrapper{
+   display: flex;
+   justify-content: center;
+}
+
+.first-input{
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    z-index: 3;
+    top: 210px;
+    left: 570px;
+    border-radius: 8px;
+    border: none;
+    mix-blend-mode: overlay;
+}.first-input:focus{
+    
+}
+
+.second-input{
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    z-index: 3;
+    left: 570px;
+    top: 266px;
+    border-radius: 8px;   
+    border: none;
+    mix-blend-mode: overlay;
+
+}.second-input:focus{
+
+}
+
+::-webkit-input-placeholder{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+.title-page{
+    position: absolute;
+    left: 570px;
+    top: 60px;
+    mix-blend-mode:soft-light;
+    transition-duration: 3s;
+    cursor: pointer;
+}.title-page:hover{
+    font-size: 36px;
+}
+
+.btn{
+    position: absolute;
+    left: 570px;
+    top: 324px;
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    transition-duration: 3s;
+    cursor: pointer;
+}.btn:hover{
+    width: 210px;
+    height: 32px;
+    background-color: rgb(151, 151, 151);
+    transition-duration: 4s;
+
+}
+
+.forgot-text{
+    position: absolute;
+    left: 617px;
+    top: 352px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.671);
+    cursor: pointer;
+    
+}.forgot-text:hover{
+    text-decoration: underline;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: black;
+}
+
+::-webkit-scrollbar-track{
+    border: 5px solid rgb(99, 99, 99);
+    box-shadow: inset 0 0 2.5px 2px rgb(10, 10, 10);
+} 
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(45deg, rgb(24, 24, 43), rgb(0, 0, 0) );
+    border-radius: 20px;
+    height: 200px;
+}::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(45deg, rgba(24, 24, 43, 0.527), rgba(0, 0, 0, 0.452) );
+}
+
+.audio {
+    position: absolute;
+    right: 90px;
+    width: 100px;
+  }
+
+  /* animations lines */
+
+
+
+.ploski-top{
+    position: absolute;
+    top: 9px;
+    left: 90px;
+    width: 700px;
+    height: 9px;
+    border-radius: 40%;
+    background-color: #0212f3c7;
+    animation-name: lineTop;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+    animation-direction: alternate;
+}
+
+
+@keyframes lineTop {
+    0%{
+        right: 10px;
+        left: 480px;
+    }
+    50%{
+        right: 230px;
+        background-color: #5602f3cc;
+    }
+    100%{
+        right: 190px;
+    }
+}
+
+
+
+
+
+
+
+
+
+.ploski-one{
+    position: absolute;
+    border-radius: 50%;
+    top: 10px;
+    left: 90px;
+    width: 5px;
+    height: 400px;
+    background-color: #0077ffb0;
+    animation-name: lineFirst;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-direction: alternate;
+}
+
+@keyframes lineFirst {
+    0%{
+        top: 10px;
+    }
+    50%{
+        top: 230px;
+    }
+    100%{
+        top: 190px;
+    }
+}
+
+
+.ploski-two{
+    position: absolute;
+    top: 290px;
+    right: 90px;
+    width: 8px;
+    border-radius: 100%;
+    height: 400px;
+    background-color: #0212f3c7;
+    animation-name: lineSecond;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+    animation-direction: alternate;
+}
+
+@keyframes lineSecond {
+    0%{
+        top: 10px;
+    }
+    50%{
+        top: 230px;
+        background-color: #06f0b5cc;
+    }
+    100%{
+        top: 190px;
+    }
+}
+
+
+.down-background{
+    position: absolute;
+    /* left: 350px; */
+    left: 0px;
+    top: 700px;
+    /* width: 1355px; */
+    width: 1355px; 
+}
+
+.black-bg{
+    position: absolute;
+    width: 700px;
+    height: 90px;
+    background-color: rgb(10, 10, 10);
+    top: 650px;
+    right: 40px;
+    transition-duration: 1s;
+}.black-bg:hover{
+    background-color: rgba(10, 10, 10, 0.589);
+    transition-duration: 1s;
+}
+.down-header{
+    color: white;
+    transition-duration: 500ms;
+}.down-header:hover{
+    color: rgba(22, 172, 192, 0.589);
+}
+.one-header{
+    position: absolute;
+    top: 650px;
+    cursor: pointer;
+    right: 620px;
+}.one-header:hover{
+    color: rgb(104, 65, 211);
+}
+.two-header{
+    position: absolute;
+    top: 650px;
+    right: 539px;
+    cursor: pointer;
+   
+}.two-header:hover{
+    color: rgb(104, 65, 211);
+}
+.three-header{
+    position: absolute;
+    top: 650px;
+    right: 450px;
+    cursor: pointer;
+}.three-header:hover{
+    color: rgb(104, 65, 211);
+}
+.four-header{
+    position: absolute;
+    top: 650px;
+    right: 60px;
+    cursor: pointer;
+}.four-header:hover{
+    color: rgb(104, 65, 211);
+}
+
+/* down put a videos */
+.video-one{
+    position: absolute;
+    top: 900px;
+    left: 90px;
+    transition-duration: 700ms;
+
+}.video-one:hover{
+    transform:scale(1.2);
+    
+}
+
+.white-border{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.493);
+    top: 840px;
+    right: 150px;
+    transition-duration: 2s;
+
+}.white-border:hover{
+    background-color: rgba(255, 255, 255, 0.26);
+}
+
+.white-border h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(31, 31, 31);
+    cursor: pointer;
+}
+
+.down-wd-text{
+    position: relative;
+    top: 820px;
+    right: 497px;
+    color: white;
+    transition-duration: 1s;
+    cursor: pointer;
+    
+}.down-wd-text:hover{
+    mix-blend-mode: overlay;
+    font-size: 30px;
+    transition-duration: 1s;
+}
+
+.video-svg{
+    position: absolute;
+    top: 845px;
+    right: 1000px;
+    transition-duration: 2s;
+}.video-svg:hover{
+    right: 1020px;
+    background-color: rgba(19, 150, 226, 0.575);
+}
+
+.footer-text-d{
+    position: absolute;
+    top: 1370px;
+    right: 1000px;
+    text-decoration:underline
+}.footer-text-d:hover{
+    color: rgba(0, 0, 0, 0.562);
+}
+
+.facebook-svg{
+    position: absolute;
+    top: 1370px;
+    right: 950px;
+    cursor: pointer;
+}
+.instagram-svg{
+    position: absolute;
+    top: 1370px;
+    right: 900px;
+    cursor: pointer;
+}
+.telegram-svg{
+    position: absolute;
+    top: 1370px;
+    right: 850px;
+    cursor: pointer;
+}
+
+
+
+
+
+
